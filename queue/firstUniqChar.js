@@ -22,9 +22,9 @@ const front = (queue) => {
   }
 };
 
-// const printQueue = (queue) => {
-//   return queue;
-// };
+const printQueue = (queue) => {
+  return queue;
+};
 
 // the function below exceeds time limit
 const firstUniqChar2 = function (s) {
