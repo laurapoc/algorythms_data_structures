@@ -19,7 +19,8 @@
 // 1 <= s.length <= 105
 // s consists of only lowercase English letters.
 
-const firstUniqChar: number | any = (s: string) => {
+// NOT IN A QUEUE WAY:
+const firstUniqCharAtString: number | any = (s: string) => {
   const chartsArr = s.split("");
   const uniqChart = chartsArr.find(
     (x: string) => chartsArr.indexOf(x) === chartsArr.lastIndexOf(x)
@@ -32,6 +33,8 @@ const firstUniqChar: number | any = (s: string) => {
   return -1;
 };
 
-console.log(firstUniqChar("loveleetcode"));
-console.log(firstUniqChar("leetcode"));
-console.log(firstUniqChar("aabb"));
+console.log(firstUniqCharAtString("loveleetcode"));
+console.log(firstUniqCharAtString("leetcode"));
+console.log(firstUniqCharAtString("aabb"));
+
+
