@@ -31,15 +31,15 @@ function firstNonRepeating(str) {
     }
   }
 
-  for(const letter of str.split('')) {
-      if(letter == uniqLetter) {
-          console.log(true)
-      }
+  for (const letter of str.split("")) {
+    if (letter == uniqLetter) {
+      console.log(true);
+    }
   }
   return uniqLetter;
 }
 
-var str = "aabc";
+let str = "aabc";
 console.log(firstNonRepeating(str));
 console.log(firstNonRepeating("loveleetcode"));
 console.log(firstNonRepeating("leetcode"));
