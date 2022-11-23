@@ -60,12 +60,6 @@ class LinkedList {
 
     return nodes;
   }
-
-  toString(callback) {
-    return this.toArray()
-      .map((node) => node.toString(callback))
-      .toString();
-  }
 }
 
 /**
